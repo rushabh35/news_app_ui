@@ -1,7 +1,7 @@
-
-
 import 'package:flutter/material.dart';
+import 'package:news_app_ui/profile_screen.dart';
 import 'app_style.dart';
+import 'news_detail_screen.dart';
 import 'size_config.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -31,7 +31,7 @@ class _MyappState extends State<Myapp> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: kLighterWhite,
-        body: HomeScreen(),
+        body: ProfileScreen(),
         bottomNavigationBar: BottomNavigationBar(
           elevation: 0,
           type: BottomNavigationBarType.fixed,
@@ -66,29 +66,29 @@ class _MyappState extends State<Myapp> {
             BottomNavigationBarItem(
                 icon: _selectedIndex == 2
                     ? SvgPicture.asset(
-                  'assets/notification_selected.svg',
-                  height: 20,
-                  width: 20,
-                )
+                        'assets/notification_selected.svg',
+                        height: 20,
+                        width: 20,
+                      )
                     : SvgPicture.asset(
-                  'assets/notification_unselected.svg',
-                  height: 20,
-                  width: 20,
-                ),
+                        'assets/notification_unselected.svg',
+                        height: 20,
+                        width: 20,
+                      ),
                 label: ''),
-            BottomNavigationBarItem(
-                icon: _selectedIndex == 3
-                    ? SvgPicture.asset(
-                  'assets/profile_selected.svg',
-                  height: 20,
-                  width: 20,
-                )
-                    : SvgPicture.asset(
-                  'assets/profile_unselected.svg',
-                  height: 20,
-                  width: 20,
-                ),
-                label: ''),
+            // BottomNavigationBarItem(
+            //     icon: _selectedIndex == 3
+            //         ? SvgPicture.asset(
+            //             'assets/profile_selected.svg',
+            //             height: 20,
+            //             width: 20,
+            //           )
+            //         : SvgPicture.asset(
+            //             'assets/profile_unselected.svg',
+            //             height: 20,
+            //             width: 20,
+            //           ),
+            //     label: ''),
           ],
           currentIndex: _selectedIndex,
           onTap: _onItemTapped,
@@ -111,7 +111,7 @@ class HomeScreen extends StatelessWidget {
           ),
           children: [
             Padding(
-              padding: const EdgeInsets.only(top: 1.0),
+              padding: const EdgeInsets.only(top: 15.0),
               child: Row(
                 children: [
                   Container(

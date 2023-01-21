@@ -4,7 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 const Color kWhite = Color (0xffffffff);
 const Color kLighterWhite = Color (0xfffcfcfc);
 const Color kLightWhite = Color (0xffeff5f4);
-
+const Color kBorderColor = Color(0xffeeeeee);
 const Color kGrey = Color(0xff9397a0);
 const Color kLightGrey = Color(0xffa7a7a7);
 
@@ -15,7 +15,7 @@ const Color kLighterBlue = Color(0xffc1d4f9);
 const Color kDarkBlue = Color(0xff19202d);
 
 const double kBorderRadius = 16.0;
-
+const double kPaddingHorizontal = 40.0;
 
 final kBorder =  OutlineInputBorder(
   borderRadius: BorderRadius.circular(kBorderRadius),
